@@ -1,19 +1,21 @@
 <?php
 
-if (!isset($_GET['p'])) {
-	$_GET['p'] = 'index';
+if (!isset($_SERVER['REQUEST_URI'])) {
+	$_SERVER['REQUEST_URI'] = '/index.html';
 }
 
-switch ($_GET['p']) {
+$p = substr(substr($_SERVER['REQUEST_URI'], 1), 0, -5);
+
+switch ($p) {
 	default:
-	case 'index':
-	$p = 'index.html'; break;
-	case 'menu': 
-	case 'activity': $p = $_GET['p'] . '.html'; break;
+	case 'index': $page = 'index.html'; break;
+	case 'new_pet':
+	case 'activity':
+    case 'login': $page = $p . '.html'; break;
 }
 
 
-$template = file_get_contents('template.html');
-$content = file_get_contents($p);
+$template = str_replace('{body_class}', $p, file_get_contents('template.html'));
+$content = file_get_contents($page);
 
 echo str_replace('{content}', $content, $template);

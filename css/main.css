@@ -1,0 +1,166 @@
+.container {
+    width: 411px;
+    min-height: 731px;
+    margin: 140px auto;
+    background-color: #e1e1e1;
+    position: relative;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+body.login .head {
+    display: none;
+}
+
+.head .logo a img {
+    max-height: 48px;
+}
+
+.head .title, .head .menu_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu_button {
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.menu_button i {
+    display: none;
+}
+
+.menu_button i.active {
+    display: inline-block;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    width: 100%;
+}
+
+.menu ul {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.menu li {
+ width: 100%;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.menu li a:hover {
+    background-color: #ddd;
+}
+
+.body {
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: solid 1px #aaa;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.label {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.group {
+    margin-bottom: 15px;
+}
+
+section.panel > * {
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+/*--------- index -----------*/
+
+.pet img {
+    width: 100%;
+}
+
+.activity {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+/*--------- login -----------*/
+
+section.logo {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/*--------- new_pet -----------*/
+
+.size {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.size img {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.size img.selected {
+    background-color: #eee;
+}
+
+.size img.size1 {
+    width: 10%;
+    height: 10%;
+}
+
+.size img.size2 {
+    width: 20%;
+    height: 20%;
+}
+
+.size img.size3 {
+    width: 30%;
+}
+
+/*--------- activity -----------*/
+
+.location img {
+    width: 100%;
+}
