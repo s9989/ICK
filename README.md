@@ -1,0 +1,2 @@
+# ICK
+Interakcja Człowiek-Komputer
