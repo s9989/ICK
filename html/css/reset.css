@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+p, figure {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+a, span, div, li, h1, h2, h3, h4, h5, label, button, input, option {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: #cccccc;
+}
+
+a {
+    color: black;
+}
