@@ -16,7 +16,7 @@
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </head>
-<body class="settings">
+<body class="login">
 <div class="container">
     <div class="mask"></div>
     <nav class="head">
@@ -24,7 +24,7 @@
             <a href="index.html"><img src="img/logo.png"></a>
         </div>
         <div class="title">
-            Profil
+            Logowanie
         </div>
         <div class="menu_button">
             <i class="material-icons">close</i>
@@ -42,33 +42,28 @@
         </ul>
     </div>
     <div class="body">
-        <form method="post" action="settings_saved.html">
-            <section class="login">
-                <div class="group">
-                    <div class="label">Imię</div>
-                    <div class="value"><input type="text" name="name" value="Ewelina"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Nazwisko</div>
-                    <div class="value"><input type="text" name="surname" value="Podsiadło"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Login</div>
-                    <div class="value"><input type="text" name="login" value="admin"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Hasło</div>
-                    <div class="value"><input type="password" name="password" value="hasło"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Email</div>
-                    <div class="value"><input type="text" name="email" value="epodsiadlo@gmail.com"></div>
-                </div>
-            </section>
-            <section class="panel">
-                <input type="submit" value="zapisz">
-            </section>
-        </form>
+        <form method="post" action="index.html">
+			<section class="logo">
+				<img src="img/logo.png">
+			</section>
+            <div class="success">
+                Zarejestrowano
+            </div>
+			<section class="login">
+				<div class="group">
+					<div class="label">Login</div>
+					<div class="value"><input type="text" name="login" placeholder="login"></div>
+				</div>
+				<div class="group">
+					<div class="label">Hasło</div>
+					<div class="value"><input type="password" name="password" placeholder="hasło"></div>
+				</div>
+			</section>
+			<section class="panel">
+				<input type="submit" value="zaloguj">
+				<a class="button empty" href="register.html">zarejestruj</a>
+			</section>
+		</form>
     </div>
     <div class="footer">
     </div>

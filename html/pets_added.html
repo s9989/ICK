@@ -16,7 +16,7 @@
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </head>
-<body class="settings">
+<body class="pets">
 <div class="container">
     <div class="mask"></div>
     <nav class="head">
@@ -24,7 +24,7 @@
             <a href="index.html"><img src="img/logo.png"></a>
         </div>
         <div class="title">
-            Profil
+            Zwierzaki
         </div>
         <div class="menu_button">
             <i class="material-icons">close</i>
@@ -42,33 +42,21 @@
         </ul>
     </div>
     <div class="body">
-        <form method="post" action="settings_saved.html">
-            <section class="login">
-                <div class="group">
-                    <div class="label">Imię</div>
-                    <div class="value"><input type="text" name="name" value="Ewelina"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Nazwisko</div>
-                    <div class="value"><input type="text" name="surname" value="Podsiadło"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Login</div>
-                    <div class="value"><input type="text" name="login" value="admin"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Hasło</div>
-                    <div class="value"><input type="password" name="password" value="hasło"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Email</div>
-                    <div class="value"><input type="text" name="email" value="epodsiadlo@gmail.com"></div>
-                </div>
-            </section>
-            <section class="panel">
-                <input type="submit" value="zapisz">
-            </section>
-        </form>
+        <div class="success">
+            Dodano nowego pupila
+        </div>
+        <section class="pets">
+            <h1>Moje pupile</h1>
+            <div class="pet">
+                <img src="img/pet1.jpg">
+                <div class="name">Dingo</div>
+            </div>
+            <div class="pet">
+                <img src="img/pet2.jpg">
+                <div class="name">Rudolf</div>
+            </div>
+            <a class="button empty" href="new_pet.html">dodaj pupila</a>
+        </section>
     </div>
     <div class="footer">
     </div>

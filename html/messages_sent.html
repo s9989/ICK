@@ -16,7 +16,7 @@
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </head>
-<body class="settings">
+<body class="messages">
 <div class="container">
     <div class="mask"></div>
     <nav class="head">
@@ -24,7 +24,7 @@
             <a href="index.html"><img src="img/logo.png"></a>
         </div>
         <div class="title">
-            Profil
+            Wiadomości
         </div>
         <div class="menu_button">
             <i class="material-icons">close</i>
@@ -42,33 +42,25 @@
         </ul>
     </div>
     <div class="body">
-        <form method="post" action="settings_saved.html">
-            <section class="login">
-                <div class="group">
-                    <div class="label">Imię</div>
-                    <div class="value"><input type="text" name="name" value="Ewelina"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Nazwisko</div>
-                    <div class="value"><input type="text" name="surname" value="Podsiadło"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Login</div>
-                    <div class="value"><input type="text" name="login" value="admin"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Hasło</div>
-                    <div class="value"><input type="password" name="password" value="hasło"></div>
-                </div>
-                <div class="group">
-                    <div class="label">Email</div>
-                    <div class="value"><input type="text" name="email" value="epodsiadlo@gmail.com"></div>
-                </div>
-            </section>
-            <section class="panel">
-                <input type="submit" value="zapisz">
-            </section>
-        </form>
+        <div class="success">
+            Wysłano wiadomość
+        </div>
+        <section class="messages">
+            <h1>Wiadomości</h1>
+            <div class="message">
+                <div class="sender">Heniek</div>
+                <div class="date">20/01/2020</div>
+                <div class="content">Cześć, Jak się miewa nasz ulubieniec? Mam w weekend trochę czasu i pomyślałem, że może będzie okazja się spotkać. Co Ty na to?</div>
+                <a class="button" href="new_message.html">odpowiedz</a>
+            </div>
+            <div class="message">
+                <div class="sender">Joanna</div>
+                <div class="date">20/01/2020</div>
+                <div class="content">Dziękuję.</div>
+                <a class="button" href="new_message.html">odpowiedz</a>
+            </div>
+            <a class="button empty" href="new_message.html">nowa wiadomość</a>
+        </section>
     </div>
     <div class="footer">
     </div>

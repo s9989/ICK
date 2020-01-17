@@ -226,6 +226,19 @@ section.logo img {
     width: 100%;
 }
 
+.rate {
+    font-size: 0;
+}
+
+.rate i {
+    color: #444;
+    cursor: pointer;
+}
+
+.rate i.active, .rate i.perm {
+    color: yellow;
+}
+
 .achievements, .favourites {
     display: flex;
     justify-content: space-between;
